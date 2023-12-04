@@ -1,4 +1,5 @@
 from abc import ABC, abstractmethod
+from functools import cached_property
 
 
 class AbstractPuzzleSolver(ABC):
@@ -10,6 +11,10 @@ class AbstractPuzzleSolver(ABC):
         self.day = day
         self.example = example
         self.__get_puzzle_data()
+
+    @cached_property
+    def line(self):
+        return self.lines[0]
 
     def __get_puzzle_data(self) -> list[str]:
         filename = "example" if self.example else "input"

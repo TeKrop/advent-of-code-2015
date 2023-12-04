@@ -1,13 +1,7 @@
-from functools import cached_property
-
 from .utils import AbstractPuzzleSolver
 
 
 class PuzzleSolver(AbstractPuzzleSolver):
-    @cached_property
-    def line(self):
-        return self.lines[0]
-
     @staticmethod
     def __get_char_value(char: str) -> int:
         return 1 if char == "(" else (-1 if char == ")" else 0)
