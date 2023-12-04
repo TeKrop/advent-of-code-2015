@@ -9,7 +9,7 @@ class PuzzleSolver(AbstractPuzzleSolver):
         return self.lines[0]
 
     @staticmethod
-    def get_char_value(char: str) -> int:
+    def __get_char_value(char: str) -> int:
         return 1 if char == "(" else (-1 if char == ")" else 0)
 
     ###########################
@@ -17,7 +17,7 @@ class PuzzleSolver(AbstractPuzzleSolver):
     ###########################
 
     def _solve_first_part(self) -> int:
-        return sum(self.get_char_value(char) for char in self.line)
+        return sum(self.__get_char_value(char) for char in self.line)
 
     ###########################
     # DAY 1 - Second Part
@@ -27,7 +27,7 @@ class PuzzleSolver(AbstractPuzzleSolver):
         floor = 0
 
         for position, char in enumerate(self.line):
-            floor += self.get_char_value(char)
+            floor += self.__get_char_value(char)
             if floor == -1:
                 break
 
