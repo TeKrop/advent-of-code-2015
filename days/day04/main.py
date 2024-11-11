@@ -10,6 +10,7 @@ class PuzzleSolver(AbstractPuzzleSolver):
     number_of_zeros: int
 
     def __compute_hashes(self) -> int:
+        self.zeros_string = self.number_of_zeros * "0"
         number = 1
         hashed_line = self.__get_hashed_line(number)
         while not self.__is_valid_hash(hashed_line):
@@ -18,7 +19,7 @@ class PuzzleSolver(AbstractPuzzleSolver):
         return number
 
     def __is_valid_hash(self, hashed_line: str) -> bool:
-        return hashed_line[: self.number_of_zeros] == (self.number_of_zeros * "0")
+        return hashed_line[: self.number_of_zeros] == self.zeros_string
 
     def __get_hashed_line(self, number: int) -> str:
         line_data = f"{self.line}{str(number)}".encode()
