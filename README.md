@@ -3,6 +3,7 @@ Advent of Code 2015 solutions in Python. It uses `uv` for dependencies managemen
 
 ## 💽 Install
 The project uses `uv` for dependencies management, install it first : https://docs.astral.sh/uv/getting-started/installation/
+
 Then, install dependencies with `uv sync`
 
 ## 🏃 Run
