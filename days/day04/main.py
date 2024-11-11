@@ -1,6 +1,6 @@
 from hashlib import md5
 
-from .utils import AbstractPuzzleSolver
+from scripts.utils import AbstractPuzzleSolver
 
 
 class PuzzleSolver(AbstractPuzzleSolver):
