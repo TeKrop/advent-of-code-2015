@@ -1,5 +1,6 @@
-from scripts.utils import AbstractPuzzleSolver
 from itertools import pairwise
+
+from scripts.utils import AbstractPuzzleSolver
 
 
 class PuzzleSolver(AbstractPuzzleSolver):

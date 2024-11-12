@@ -1,5 +1,6 @@
-from scripts.utils import AbstractPuzzleSolver
 from enum import StrEnum
+
+from scripts.utils import AbstractPuzzleSolver
 
 
 class PuzzleSolver(AbstractPuzzleSolver):
