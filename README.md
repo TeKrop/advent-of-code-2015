@@ -1,4 +1,8 @@
 # 🎅 Advent of Code 2015
+![Made with Python](https://img.shields.io/badge/Python-v3.13-blue?logo=python&logoColor=white)
+[![AoC 2015](https://img.shields.io/badge/2015-⭐%2016-gray?logo=adventofcode&labelColor=8a2be2)](https://adventofcode.com/2015)
+[![License: MIT](https://img.shields.io/github/license/TeKrop/advent-of-code-2015)](https://github.com/TeKrop/advent-of-code-2015/blob/main/LICENSE)
+
 Advent of Code 2015 solutions in Python. It uses `uv` for dependencies management, `typer` for CLI commands, and `pyinstrument` for profiling. My goal is to write the most readable, understandable and maintainable solutions IMO, which are not necessarily the most performant ones.
 
 The project comes with a dotenv file in which you can specify an `AOC_SESSION_ID` if you wish to automate your input retrieval, and make an answer from CLI directly.
