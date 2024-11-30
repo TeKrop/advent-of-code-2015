@@ -2,7 +2,6 @@ from dataclasses import dataclass
 from enum import StrEnum
 from functools import cache, cached_property
 
-from rich import print
 
 from scripts.utils import AbstractPuzzleSolver
 

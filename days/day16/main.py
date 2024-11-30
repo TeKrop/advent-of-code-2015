@@ -1,5 +1,3 @@
-from rich import print
-
 from scripts.utils import AbstractPuzzleSolver
 
 
